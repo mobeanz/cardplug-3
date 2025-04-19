@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans px-6 py-12">
@@ -11,7 +13,9 @@ export default function Home() {
       <main className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Buy and Sell Trading Card Bulk Orders with Transparency</h2>
         <p className="text-gray-600 mb-8">CardPlug.io connects high-volume buyers and bulk sellers of sealed trading card products, with built-in transparency at every step.</p>
-        <button className="bg-orange-500 text-white px-6 py-3 rounded font-semibold hover:bg-orange-600 transition">Get Started</button>
+        <Link href="/buyer">
+          <button className="bg-orange-500 text-white px-6 py-3 rounded font-semibold hover:bg-orange-600 transition">Get Started</button>
+        </Link>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
           <div className="border rounded-lg p-6 shadow-sm">
